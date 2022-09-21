@@ -1,0 +1,7 @@
+[MASTER]
+disable =
+  missing-docstring
+
+[REPORTS]
+reports = no
+msg-template = {path}:{line}: {msg_id} {symbol} {msg}

@@ -1,0 +1,8 @@
+/.vscode/
+/tweakdb.bin
+/tweakdb.json
+
+.DS_Store
+*.py[cod]
+__pycache__
+
