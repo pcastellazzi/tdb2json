@@ -1,6 +1,7 @@
 /.vscode/
-/tweakdb.bin
-/tweakdb.json
+/*.bin
+/*.json
+/*.txt
 
 .DS_Store
 *.py[cod]
