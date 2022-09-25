@@ -22,7 +22,7 @@ if __name__ == "__main__":
             tstr = TweakString(TweakStringReader(fd)).read()
 
             for strtype in ("flats", "records", "queries"):
-                for _, strval in tstr["flats"].items():
+                for _, strval in tstr[strtype].items():
                     strcrc = crc32(bytes(strval, "utf8"))
                     print(f"{strval},0x{strcrc:X},ToTweakDBID{{ hash = 0x{strcrc:X}, length = {len(strval)} }}")
 
