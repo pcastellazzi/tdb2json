@@ -42,7 +42,7 @@ class BinaryStream:
         return unpack("<b", self.read(1))[0]
 
     def read_int16(self):
-        return unpack("<i", self.read(2))[0]
+        return unpack("<h", self.read(2))[0]
 
     def read_int32(self):
         return unpack("<i", self.read(4))[0]
@@ -54,7 +54,7 @@ class BinaryStream:
         return unpack("<B", self.read(1))[0]
 
     def read_uint16(self):
-        return unpack("<I", self.read(2))[0]
+        return unpack("<H", self.read(2))[0]
 
     def read_uint32(self):
         return unpack("<I", self.read(4))[0]
